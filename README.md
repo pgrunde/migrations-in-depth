@@ -34,13 +34,13 @@
 	rename_column
 
 ### YYYYMMDDHHMMSS_create_users_table.rb
-
+### 20140722101534_create_users_table.rb
 	    
     class CreateUsers < ActiveRecord::Migration
 		def up
     		create_table :users do |t|
       			t.string :name
-      			t.text :email
+      			t.string :email      			
  
       			t.timestamps
     		end
@@ -55,7 +55,7 @@
 		def change
     		create_table :users do |t|
       			t.string :name
-      			t.text :email
+      			t.string :email
  
       			t.timestamps
     		end
